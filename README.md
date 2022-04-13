@@ -1,3 +1,20 @@
+# Repro of bug with `@storybook/theming`
+
+## Steps to reproduce
+
+1. Create new Next.js project
+   - I also tested these steps in a fresh CRA project, which does not produce the error
+2. Add `@storybook/theming@6.5.0-alpha.31` or later
+   - `@storybook/theming@6.5.0-alpha.30` or earlier does not produce the error (see commit history)
+3. Use within project
+4. Run `yarn dev` or `yarn build`
+
+Here's the error:
+
+![Screenshot of error](./Error.png)
+
+---
+
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 ## Getting Started
